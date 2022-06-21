@@ -20,7 +20,7 @@ const Navbar = () => {
           <a className="navbar-brand" href="#">
             <img
               style={{ width: "100px" }}
-              src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c52f.png"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
               alt=""
               name=""
             />
