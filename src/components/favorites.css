@@ -1,0 +1,30 @@
+.favorites {
+  font-family: "Trispace", sans-serif;
+  text-transform: uppercase;
+  height: 100vh;
+}
+
+.favorites .favorite-poke {
+  display: flex;
+  justify-content: center;
+}
+
+.favorites .favorite-poke .favorite-img {
+  border-radius: 50%;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  background-image: url("../assets/favorite.jpg");
+  object-fit: contain;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+}
+.favorites .favorite-poke img {
+  width: 120%;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  right: -60%;
+}

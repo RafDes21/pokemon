@@ -1,0 +1,22 @@
+nav {
+  height: 70px;
+  background-image: url("https://assets.jumpseller.com/store/magic-chile/themes/320750/options/28251877/SLIDERS%20WEB.png?1662051664");
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  object-fit:cover;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  margin: auto 0;
+  padding: 0;
+  gap: 20px;
+}
+nav ul li .link {
+  color: #010101;
+  text-decoration: none;
+  list-style: none;
+}

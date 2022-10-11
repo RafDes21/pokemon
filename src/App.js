@@ -1,13 +1,13 @@
-
-import './App.css';
-
-import Navbar from './componentes/Navbar';
+import PokeState from "./context/Pokemon/PokeState";
+import RoutesComp from "./routs/Routes";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-   <Navbar/>
-   
+      <PokeState>
+        <RoutesComp />
+      </PokeState>
     </div>
   );
 }
