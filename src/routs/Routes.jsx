@@ -9,8 +9,8 @@ const RoutesComp = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home/>}/>
-          <Route path="/favorites" element={<Favorites/>}/>
+          <Route index element={<Home />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Route>
       </Routes>
     </BrowserRouter>

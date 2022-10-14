@@ -1,0 +1,10 @@
+.Footer {
+  padding-bottom: 40px;
+}
+.footer {
+  height: 150px;
+  background-image: url("../assets/nav.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

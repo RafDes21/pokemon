@@ -15,7 +15,7 @@ const PokeState = ({ children }) => {
   const getPokemons = async () => {
     let array = [];
     if (state.pokemons.length === 0) {
-      for (let index = 1; index < 30; index++) {
+      for (let index = 1; index < 200; index++) {
         const res = await axios.get(
           `https://pokeapi.co/api/v2/pokemon/${index}`
         );
@@ -24,6 +24,20 @@ const PokeState = ({ children }) => {
       dispatch({
         type: "GET_POKEMONS",
         payload: array,
+      });
+    }
+  };
+  const getPokemon = async (id) => {
+    if (id > 0) {
+      const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
+      dispatch({
+        type: "GET_POKEMON",
+        payload: res.data,
+      });
+    } else {
+      dispatch({
+        type: "GET_POKEMON",
+        payload: "",
       });
     }
   };
@@ -74,8 +88,10 @@ const PokeState = ({ children }) => {
       value={{
         pokemons: state.pokemons,
         favorites: state.favorites,
+        selectPokemon: state.selectPokemon,
         getPokemons,
         getFavorite,
+        getPokemon,
       }}
     >
       {children}

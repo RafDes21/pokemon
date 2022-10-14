@@ -1,9 +1,35 @@
+
+/* pag home-inicio */
+.favorites .favorite-title{
+  color: rgba(250, 208, 44, 1);
+ }
+ 
+ /* pag home-final*/
 .favorites {
   font-family: "Trispace", sans-serif;
   text-transform: uppercase;
   height: 100vh;
+  padding-top: 100px;
+  max-height: 700px;
+  overflow: hidden;
 }
-
+.favorites .favorite-link {
+  margin-top: 40px;
+}
+.favorites .favorite-link span {
+  color: #010101;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #00ff00;
+}
+.favorites .favorite-link:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.favorites .cargando {
+  margin-top: 200px;
+  color: aliceblue;
+}
 .favorites .favorite-poke {
   display: flex;
   justify-content: center;
@@ -14,7 +40,7 @@
   position: relative;
   width: 130px;
   height: 130px;
-  background-image: url("../assets/favorite.jpg");
+  background-image: url("../../assets/favorite.jpg");
   object-fit: contain;
   background-position: center;
   background-size: contain;

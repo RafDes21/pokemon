@@ -1,6 +1,6 @@
 import React from "react";
-import Pokemons from "../components/Pokemons";
-import "../components/pokemon.css";
+import Pokemons from "../components/pokemons/Pokemons";
+import "../components/pokemons/pokemon.css";
 
 const Home = () => {
   return (

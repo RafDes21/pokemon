@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;1,100&family=Noto+Sans&family=Oleo+Script&family=Trispace:wght@300&display=swap");
 nav {
   height: 70px;
   background-image: url("https://assets.jumpseller.com/store/magic-chile/themes/320750/options/28251877/SLIDERS%20WEB.png?1662051664");
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
   background-size: cover;
-  object-fit:cover;
+  object-fit: cover;
+  position: fixed;
+  transform: translateX(50%);
+  right: 50%;
+  z-index: 3;
 }
 
 nav ul {
@@ -15,8 +20,45 @@ nav ul {
   padding: 0;
   gap: 20px;
 }
+nav li {
+  border: 1px solid #3d7697;
+  background-color: rgba(250, 208, 44, 1);
+  border-radius: 10px;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+nav li:hover{
+  transform: scaleX(1.1);
+  transition: all 0.2s;
+}
+
+nav li::after {
+  content: "";
+  height: 120%;
+  position: absolute;
+  top: -3%;
+  left: -3%;
+  width: 110%;
+  transform: translateY(-100%);
+  padding: 5px 5px;
+  cursor: pointer;
+}
+nav li:hover::after {
+  color: #010101;
+  transform: translateY(-5%);
+  background-color: #32cd32;
+  transition: 0.3s;
+}
+
 nav ul li .link {
   color: #010101;
+  font-family: "Noto Sans", sans-serif;
   text-decoration: none;
   list-style: none;
+  text-transform: uppercase;
+  margin: 5px 20px;
+  z-index: 3;
+  position: relative;
 }
