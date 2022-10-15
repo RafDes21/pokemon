@@ -16,7 +16,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <ul className="">
+      <ul className="desktop">
         <li className="nav-link">
           <Link  className="link" to="/">
             Home

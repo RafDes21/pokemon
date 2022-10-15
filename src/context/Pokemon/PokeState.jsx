@@ -15,7 +15,7 @@ const PokeState = ({ children }) => {
   const getPokemons = async () => {
     let array = [];
     if (state.pokemons.length === 0) {
-      for (let index = 1; index < 200; index++) {
+      for (let index = 1; index < 100; index++) {
         const res = await axios.get(
           `https://pokeapi.co/api/v2/pokemon/${index}`
         );

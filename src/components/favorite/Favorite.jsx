@@ -11,7 +11,7 @@ const Favorite = () => {
         {favorites.length === 0  ? (
           <>
           <h1 className="favorite-title text-center"> YOUR POKEBASE IS EMPTY</h1>
-          <Link className="nav-link favorite-link text-center" to='/'><span>GO CATCH POKEMON</span></Link>
+          <Link className="nav-link favorite-link" to='/'><span>GO CATCH POKEMON</span></Link>
           </>
         ) : (
           favorites.map((pokemon) => (

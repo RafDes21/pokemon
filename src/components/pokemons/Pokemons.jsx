@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PokeContext from "../../context/Pokemon/PokeContext";
 import Video from "../../videos/pokemon.mp4";
 import { Spinner } from "reactstrap";
-import {AiOutlineCloseCircle} from "react-icons/ai"
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Pokemons = () => {
   const { pokemons, getPokemons, getFavorite, getPokemon, selectPokemon } =
@@ -81,7 +81,9 @@ const Pokemons = () => {
                 <h5>Peso: {selectPokemon.weight} gr.</h5>
                 <h5>Altura: {selectPokemon.height}</h5>
                 <h5>Habilidad: {selectPokemon.abilities[0].ability.name}</h5>
-                <span onClick={() => detail(0)}><AiOutlineCloseCircle/></span>
+                <span onClick={() => detail(0)}>
+                  <AiOutlineCloseCircle />
+                </span>
               </div>
             </div>
           )}

@@ -1,14 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;1,100&family=Oleo+Script&family=Trispace:wght@300&display=swap");
 
-
 .pokemons {
   font-family: "Trispace", sans-serif;
-  max-height: 600px;
-  height: 550px;
-  overflow: auto;
-  padding-top: 100px;
-  margin-bottom: 40px;
-  position: relative;
 }
 .pokemons .row {
   height: 100%;
@@ -25,18 +18,18 @@
   z-index: 6;
   position: fixed;
 }
-.pokemons .detail img{
-  background-image:url("../../assets/grass.jpg");
+.pokemons .detail img {
+  background-image: url("../../assets/grass.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   border-radius: 8px 0 0 8px;
 }
-.pokemons .detail .p-3{
+.pokemons .detail .p-3 {
   position: relative;
 }
-.pokemons .detail .p-3 span{
+.pokemons .detail .p-3 span {
   font-size: 25px;
   color: #ff0000;
   cursor: pointer;
@@ -44,7 +37,7 @@
   bottom: 10%;
   right: 5%;
 }
-.pokemons .detail .p-3 span:hover{
+.pokemons .detail .p-3 span:hover {
   transform: scale(1.1);
   transition: all 0.5s;
 }
