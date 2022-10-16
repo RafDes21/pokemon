@@ -1,22 +1,29 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import PokeContext from "../../context/Pokemon/PokeContext";
+import {MdDelete} from "react-icons/md"
 
 const Favorite = () => {
-  const { favorites } = useContext(PokeContext);
+  const { favorites, getFavorite } = useContext(PokeContext);
+
 
   return (
     <div className="favorites container">
       <div className="row">
-        {favorites.length === 0  ? (
+        {favorites.length === 0 ? (
           <>
-          <h1 className="favorite-title text-center"> YOUR POKEBASE IS EMPTY</h1>
-          <Link className="nav-link favorite-link" to='/'><span>GO CATCH POKEMON</span></Link>
+            <h1 className="favorite-title text-center">
+              {" "}
+              YOUR POKEBASE IS EMPTY
+            </h1>
+            <Link className="nav-link favorite-link" to="/">
+              <span>GO CATCH POKEMON</span>
+            </Link>
           </>
         ) : (
           favorites.map((pokemon) => (
             <div
-              className="col-12 col-sm-6 col-md-4 col-lg-3 my-2"
+              className="col-12 col-sm-6 col-md-4 col-lg-3 my-2 card-pokemon"
               key={pokemon.id}
             >
               <div className="card favorite-card">
@@ -30,6 +37,7 @@ const Favorite = () => {
                 </div>
                 <h5 className="text-center">{pokemon.name}</h5>
               </div>
+              <div className="button" onClick={() => getFavorite(pokemon.id)}><MdDelete/></div>
             </div>
           ))
         )}

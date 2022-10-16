@@ -6,7 +6,6 @@ nav {
   background-position: center;
   background-size: cover;
   object-fit: cover;
-
 }
 
 nav ul {
@@ -26,7 +25,7 @@ nav li {
   overflow: hidden;
   box-sizing: border-box;
 }
-nav li:hover{
+nav li:hover {
   transform: scaleX(1.1);
   transition: all 0.2s;
 }
@@ -59,8 +58,71 @@ nav ul li .link {
   z-index: 3;
   position: relative;
 }
-/* @media only screen and (max-width:768px){
-  nav .desktop{
+nav .mobile {
   display: none;
+}
+nav .control {
+  display: none;
+}
+nav .return {
+  /*Button to go up*/
+  color: #32cd32;
+  font-size: 50px;
+  position: fixed;
+  transform: translateY(500%);
+  z-index: 5;
+  cursor: pointer;
+  left: 50px;
+}
+nav .return:hover {
+  color: rgba(250, 208, 44, 1);
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    position: relative;
   }
-} */
+
+  nav .desktop {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+    position: relative;
+  }
+  nav .mobile {
+    background-color: #01010195;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    z-index: 5;
+    transition: all 0.7s;
+    border-radius: 80px 0px 0 80px;
+  }
+
+  nav .mobile li {
+    margin: 20px 40px;
+  }
+  nav .control {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 90;
+    cursor: pointer;
+    font-size: 30px;
+    position: fixed;
+    color: rgba(250, 208, 44, 1);
+  }
+  nav .return {
+    /* color: #32cd32; */
+    font-size: 30px;
+    position: fixed;
+    transform: translateY(600%);
+    z-index: 5;
+    cursor: pointer;
+    left: 20px;
+  }
+}

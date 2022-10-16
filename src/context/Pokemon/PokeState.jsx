@@ -92,6 +92,7 @@ const PokeState = ({ children }) => {
         getPokemons,
         getFavorite,
         getPokemon,
+        delteFavorites
       }}
     >
       {children}

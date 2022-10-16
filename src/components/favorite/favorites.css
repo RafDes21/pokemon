@@ -9,9 +9,12 @@
   font-family: "Trispace", sans-serif;
   text-transform: uppercase;
   height: 100vh;
+  position: relative;
 }
 .favorites .favorite-link {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 .favorites .favorite-link span {
   color: #010101;
@@ -51,4 +54,29 @@
   top: 50%;
   right: -60%;
 }
+.card-pokemon {
+  position: relative;
+}
+.favorites .button {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  font-size: 30px;
+  color: #ff0000;
+  cursor: pointer;
+}
 
+.favorites .button:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+/* @media only screen and(max-width: 768px){
+  .favorites .button {
+    position: absolute;
+    top: 2px;
+    right: 50px;
+    font-size: 30px;
+    color: #ff0000;
+    cursor: pointer;
+  }
+} */

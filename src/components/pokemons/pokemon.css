@@ -7,8 +7,10 @@
   height: 100%;
   position: relative;
 }
+
+/*Init card-pokemon*/
 .pokemons .detail {
-  background-color: #00ff00;
+  background-color: rgba(250, 208, 44, 1);
   transform: translateY(50%);
   bottom: 50%;
   transform: translateX(50%);
@@ -18,33 +20,36 @@
   z-index: 6;
   position: fixed;
 }
+
 .pokemons .detail img {
   background-image: url("../../assets/grass.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 8px 0 0 8px;
 }
 .pokemons .detail .p-3 {
   position: relative;
+  margin: 5px 5px;
 }
 .pokemons .detail .p-3 span {
   font-size: 25px;
   color: #ff0000;
   cursor: pointer;
   position: absolute;
-  bottom: 10%;
-  right: 5%;
+  top: -5%;
+  right: 0;
 }
 .pokemons .detail .p-3 span:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   transition: all 0.5s;
 }
+/*Final card-pokemon*/
 .pokemons .video {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 .pokemons video {
@@ -98,7 +103,7 @@
   bottom: 3%;
   border-radius: 50%;
   animation-name: pokemon;
-  animation-duration: 3037ms;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 @keyframes pokemon {
